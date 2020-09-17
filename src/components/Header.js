@@ -5,8 +5,7 @@ import styled from 'styled-components'
 
 const TodoHeader = styled.h1`
   font-size: 36px;
-  color: green;
-`
+`;
 
 const Header = ({ addTodo }) => (
   <header className="header">
