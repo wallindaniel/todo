@@ -1,29 +1,8 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from 'react';
+import PropTypes from 'prop-types';
 
-const Footer = props => {
-  const { activeCount, completedCount, onClearCompleted } = props
-  const itemWord = activeCount === 1 ? 'item' : 'items'
-  return (
-    <footer className="footer">
-      <span className="todo-count">
-        <strong>{activeCount || 'No'}</strong> {itemWord} left
-      </span>
-      {
-        !!completedCount &&
-        <button
-          className="clear-completed"
-          onClick={onClearCompleted}
-        >Clear completed</button>
-      }
-    </footer>
-  )
-}
+const Footer = () => null;
 
-Footer.propTypes = {
-  completedCount: PropTypes.number.isRequired,
-  activeCount: PropTypes.number.isRequired,
-  onClearCompleted: PropTypes.func.isRequired,
-}
+Footer.propTypes = {};
 
 export default Footer
