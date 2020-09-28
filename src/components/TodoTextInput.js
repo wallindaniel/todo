@@ -3,9 +3,15 @@ import PropTypes from 'prop-types';
 
 export default class TodoTextInput extends Component {
 
-  state = {}
+  state = {
+    param: 'todoTextInput params'
+  }
 
-  render() {}
-
-  static propTypes = {};
+  render() {
+    return (
+      <input type="text" value={this.state.param} />
+    )
+  }
 }
+
+TodoTextInput.propTypes = {};

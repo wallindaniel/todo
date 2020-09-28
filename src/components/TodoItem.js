@@ -1,12 +1,20 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import TodoTextInput from './TodoTextInput';
 
 export default class TodoItem extends Component {
 
-  state = {}
+  state = {
+    param: 'todo object params'
+  }
 
-  render() {}
-
-  static propTypes = {};
+  render() {
+    return (
+      <li>
+        <p>Todo item</p>
+        <p>{this.state.param}</p>
+      </li>
+    )
+  }
 }
+
+TodoItem.propTypes = {};
